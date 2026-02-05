@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Programação</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<header>
+  <h1>Teste seus conhecimentos em programação</h1>
+</header>
+
+<main>
+<form id="quizForm">
+
+  <fieldset data-question="q1">
+    <legend>1. O que significa HTML?</legend>
+    <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+    <label><input type="radio" name="q1" value="b"> High Text Machine Language</label>
+    <label><input type="radio" name="q1" value="c"> Hyperlinks and Text Markup Language</label>
+    <label><input type="radio" name="q1" value="d"> Home Tool Markup Language</label>
+  </fieldset>
+
+  <fieldset data-question="q2">
+    <legend>2. Qual tag cria um parágrafo?</legend>
+    <label><input type="radio" name="q2" value="a">&lt;h1&gt;</label>
+    <label><input type="radio" name="q2" value="b">&lt;div&gt;</label>
+    <label><input type="radio" name="q2" value="c">&lt;p&gt;</label>
+    <label><input type="radio" name="q2" value="d">&lt;span&gt;</label>
+  </fieldset>
+
+  <fieldset data-question="q3">
+    <legend>3. Para que serve o CSS?</legend>
+    <label><input type="radio" name="q3" value="a">Criar banco de dados</label>
+    <label><input type="radio" name="q3" value="b">Estilizar páginas</label>
+    <label><input type="radio" name="q3" value="c">Criar lógica</label>
+    <label><input type="radio" name="q3" value="d">Executar no servidor</label>
+  </fieldset>
+
+  <fieldset data-question="q4">
+    <legend>4. Comentário em JavaScript?</legend>
+    <label><input type="radio" name="q4" value="a">&lt;!-- --&gt;</label>
+    <label><input type="radio" name="q4" value="b">#</label>
+    <label><input type="radio" name="q4" value="c">//</label>
+    <label><input type="radio" name="q4" value="d">/* */</label>
+  </fieldset>
+
+  <fieldset data-question="q5">
+    <legend>5. Qual propriedade muda a cor do texto?</legend>
+    <label><input type="radio" name="q5" value="a">background-color</label>
+    <label><input type="radio" name="q5" value="b">font-style</label>
+    <label><input type="radio" name="q5" value="c">color</label>
+    <label><input type="radio" name="q5" value="d">text-align</label>
+  </fieldset>
+
+  <fieldset data-question="q6">
+    <legend>6. Linguagem interativa?</legend>
+    <label><input type="radio" name="q6" value="a">HTML</label>
+    <label><input type="radio" name="q6" value="b">CSS</label>
+    <label><input type="radio" name="q6" value="c">JavaScript</label>
+    <label><input type="radio" name="q6" value="d">SQL</label>
+  </fieldset>
+
+  <fieldset data-question="q7">
+    <legend>7. Qual tag cria botão?</legend>
+    <label><input type="radio" name="q7" value="a">&lt;input&gt;</label>
+    <label><input type="radio" name="q7" value="b">&lt;btn&gt;</label>
+    <label><input type="radio" name="q7" value="c">&lt;button&gt;</label>
+    <label><input type="radio" name="q7" value="d">&lt;click&gt;</label>
+  </fieldset>
+
+  <fieldset data-question="q8">
+    <legend>8. O que significa CSS?</legend>
+    <label><input type="radio" name="q8" value="a">Computer Style Sheets</label>
+    <label><input type="radio" name="q8" value="b">Creative Style System</label>
+    <label><input type="radio" name="q8" value="c">Cascading Style Sheets</label>
+    <label><input type="radio" name="q8" value="d">Color Style Sheets</label>
+  </fieldset>
+
+  <fieldset data-question="q9">
+    <legend>9. O que é programação?</legend>
+    <input type="text" name="q9" placeholder="Digite sua resposta">
+  </fieldset>
+
+  <fieldset data-question="q10">
+    <legend>10. Para que serve o JavaScript?</legend>
+    <input type="text" name="q10" placeholder="Digite sua resposta">
+  </fieldset>
+
+  <button type="submit">Enviar respostas</button>
+</form>
+</main>
+
+<!-- OVERLAY / MODAL (compatível com seu CSS antigo) -->
+<div class="overlay hidden" id="overlay">
+  <div class="modal" id="modalBox">
+    <!-- conteúdo será inserido via JS -->
+  </div>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>

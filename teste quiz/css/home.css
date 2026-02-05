@@ -1,0 +1,71 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* CONTAINER */
+.container {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* TÍTULOS */
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* TEXTO */
+.info {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.start-title {
+  margin-bottom: 1rem;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* ANIMAÇÃO NO HOVER */
+.btn:hover {
+  background-color: #1e90ff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(30, 144, 255, 0.5);
+}
