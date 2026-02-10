@@ -1,0 +1,154 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+  --bg: #020617;
+  --card: #020617;
+  --primary: #38bdf8;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --text: #e5e7eb;
+  --border: #1f2933;
+}
+
+/* BODY */
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* TRAVA SCROLL QUANDO MODAL ABRE */
+body.locked {
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* TÍTULOS */
+h1 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.start-title {
+  margin-bottom: 1rem;
+}
+
+/* BOTÕES HOME */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--primary), #0ea5e9);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* OVERLAY E MODAL */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  background: var(--bg);
+  padding: 2rem;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* INPUTS MODAL */
+.modal input[type="text"],
+.modal input[type="password"] {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+/* MENSAGENS DE ERRO */
+.error-msg {
+  display: block;
+  margin-top: 1rem;
+  color: var(--danger);
+  font-weight: bold;
+}
+
+/* SCROLL DO MODAL */
+.modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) transparent;
+}

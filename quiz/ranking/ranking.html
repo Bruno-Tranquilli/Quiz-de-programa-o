@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ranking - Quiz</title>
+  <link rel="stylesheet" href="ranking.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🏆 Ranking Global</h1>
+    <p class="subtitle">Os melhores jogadores do quiz</p>
+
+    <div class="rank-box">
+      <div class="rank-header">
+        <span>#</span>
+        <span>Nome</span>
+        <span>Pontos</span>
+        <span>Data</span>
+      </div>
+
+      <div id="rankingList" class="rank-list">
+        <p class="loading">Carregando ranking...</p>
+      </div>
+    </div>
+
+    <button class="btn" onclick="voltar()">Voltar</button>
+  </div>
+
+  <script src="ranking.js"></script>
+</body>
+</html>
